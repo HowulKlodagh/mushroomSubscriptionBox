@@ -1,0 +1,152 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif; 
+font-family: 'Comfortaa', cursive;*/
+
+body {
+    background: linear-gradient(rgb(75, 72, 51), rgb(24, 22, 15));
+    background-attachment: fixed;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 700px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    #container {
+        background-color: blue;
+        max-width: 100%;
+    }
+    #culinary_card, #medical_card {
+        flex-basis: 300px;
+        flex-shrink: 
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 2400px) {
+
+    #duo_card {
+        max-width: 330px;
+        flex-shrink: 1;
+    }
+
+    .card {
+        max-width: 310px;
+    }
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    /* min-width: 300px; */
+}
+
+.card_banner {
+    height: 250px;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#duo_card h2 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8em;
+    letter-spacing: .2em;
+    margin-top: .5em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive; 
+    font-size: 1.3em;
+    border-top: 1px rgb(35, 129, 35) solid;
+    border-bottom: 1px solid rgb(35, 129, 35);
+    padding: .5em;
+    color: rgb(35, 129, 35);
+}
+
+h4 {
+    margin: .5em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+}
+
+li {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+#culinary_card, #medical_card  {
+    box-shadow: 5px 5px 5px black;
+}
+
+#cul_banner {
+    background-image: linear-gradient(to top,white, 30%, rgba(255, 255, 255, 0)), url('cul-banner.jfif');
+}
+
+#med_banner {
+    background-image: linear-gradient(to top,white, 30%, rgba(255, 255, 255, 0)), url('med-banner.jfif');
+}
+
+#cul_banner, #duo_banner, #med_banner {
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+
+#duo_banner {
+    background-image: linear-gradient(to top,white, 30%, rgba(255, 255, 255, 0)), url('duo-banner.jpg');
+    background-size: 500px 230px
+}
+
+#duo_card {
+    box-shadow: 7px 7px 7px black;
+    width: 30%;
+    height: auto%;
+    min-width: 310px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(38, 104, 60);
+    color: rgb(38, 104, 60);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    transition: all .4s
+}
+
+button:hover {
+    box-shadow: inset 12em 0em rgb(38, 104, 60);
+    color: white;
+}
