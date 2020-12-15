@@ -1,0 +1,170 @@
+/* 
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. 
+*/
+
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif; 
+font-family: 'Comfortaa', cursive;
+*/
+
+body {
+    background: linear-gradient(rgb(75, 72, 51), rgb(24, 22, 15));
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#container {
+
+    width: 1200px;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    min-width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+#culinary_card, #medical_card  {
+    box-shadow: 5px 5px 5px black;
+}
+
+#duo_card {
+    box-shadow: 7px 7px 7px black;
+    width: 33%;
+}
+
+.card_banner {
+    height: 250px;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2em;
+}
+
+#cul_banner {
+    background-image: linear-gradient(to top,white, 30%, rgba(255, 255, 255, 0)), url('cul-banner.jfif');
+}
+
+#med_banner {
+    background-image: linear-gradient(to top,white, 30%, rgba(255, 255, 255, 0)), url('med-banner.jfif');
+}
+
+#duo_banner {
+    background-image: linear-gradient(to top,white, 30%, rgba(255, 255, 255, 0)), url('duo-banner.jpg');
+}
+
+#cul_banner, #duo_banner, #med_banner {
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8em;
+    letter-spacing: .2em;
+    margin-top: .5em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#duo_card h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive; 
+    font-size: 1.3em;
+    border-top: 1px rgb(35, 129, 35) solid;
+    border-bottom: 1px solid rgb(35, 129, 35);
+    padding: .5em;
+    color: rgb(35, 129, 35);
+}
+
+h4 {
+    margin: .5em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+}
+
+li {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(38, 104, 60);
+    color: rgb(38, 104, 60);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    transition: all .4s
+}
+
+button:hover {
+    box-shadow: inset 12em 0em rgb(38, 104, 60);
+    color: white;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 480px) {
+    #container {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    }
+}
+
+/* IPADS */
+@media (min-width: 481px) and (max-width: 768px) { 
+    #container {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 460px;
+    }
+}
+
+/* SMALL SCREEN */
+@media (min-width: 769px) and (max-width: 1023px) {
+    #container {
+        width: 790px;
+    }
+
+    .card {
+        max-width: 125px;
+    }
+}
+
+/* LARGE SCREEN */
+@media (min-width:1024px) and (max-width: 1201){
+
+}
+
